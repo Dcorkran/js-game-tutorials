@@ -8,3 +8,12 @@ Ok, so we are going to make rock-paper-scissors using JavaScript! Hooray! Making
 
 ### Chrome Dev-Tools and You!
 Stuff goes here.
+
+### Code Snippet
+
+```js
+function test(app){
+  app = 2;
+  return app
+}
+```

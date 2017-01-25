@@ -24,3 +24,15 @@ md-sidenav{
   margin-left: 0;
   margin-right: 0;
 }
+
+md-content{
+  background-color: #FCFCFC;
+}
+
+nav{
+  background-color: #80CBC4;
+}
+
+._md-nav-button-text{
+  color: #E6E8F5;
+}

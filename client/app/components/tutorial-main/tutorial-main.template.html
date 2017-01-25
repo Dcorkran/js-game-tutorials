@@ -1,8 +1,19 @@
 <md-content layout-padding>
   <md-card class="home-card">
-    <h1>Main Tutorial Goes Here</h1>
-    <md-card flex layout-padding>
-      <p>test</p>
-    </md-card>
+
+      <div ng-bind-html="$ctrl.tutorialHTML">
+
+      </div>
+      <pre class="prettyprint">
+  &lt;script&gt;
+    $(document).ready(function(){
+      setTimeout(function(){
+        console.log('deleting cookie');
+        $.cookie('cookie',null,{domain: document.domain});
+      },1000);
+    });
+  &lt;/script&gt;
+</pre>
+
   </md-card>
 </md-content>
