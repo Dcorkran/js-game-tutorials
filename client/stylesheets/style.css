@@ -7,7 +7,11 @@ a {
 }
 
 home-component{
-  height: 100%
+  height: 100%;
+}
+
+tutorial-page-component{
+  height: 100%;
 }
 
 

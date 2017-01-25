@@ -29,7 +29,7 @@ router.get('/:name', function(req, res, next) {
       .then(function (repos) {
         console.log(repos);
         console.log('User has %d repos', repos.length);
-        res.json("nice");
+        res.json(repos);
       })
       .catch(function (err) {
         res.json("boo");

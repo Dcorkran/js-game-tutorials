@@ -18,7 +18,14 @@
         template: `
         <home-component layout="row" ng-cloak></home-component>
         `
-      });
+      })
+      .state({
+        name: 'tutorial',
+        url: '/tutorial/:name',
+        template: `
+        <tutorial-page-component layout="row" ng-cloak></tutorial-page-component>
+        `
+      })
       $urlRouterProvider.otherwise('/')
   }
 
