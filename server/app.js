@@ -6,6 +6,7 @@ const bodyParser = require('body-parser')
 
 const index = require('./routes/index')
 const users = require('./routes/users')
+const tutorial = require('./api/v1/tutorial')
 
 const app = express()
 
@@ -16,6 +17,7 @@ app.use(express.static(path.join(__dirname, '/../client')))   // <--- #1
 
 app.use('/api/v1', index)
 app.use('/api/v1', users)
+app.use('/api/v1/tutorial', tutorial)
 
 app.use('*', function (req, res) {                            // <--- #2
   res.sendFile('index.html', {
