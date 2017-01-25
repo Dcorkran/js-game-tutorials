@@ -1,3 +1,3 @@
-### JS Game Tutorials
+# JS Game Tutorials
 
 README goes here... later...
