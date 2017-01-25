@@ -3,6 +3,7 @@ var router = express.Router();
 var rp = require('request-promise');
 const GITHUB_URL = 'https://api.github.com/repos/Dcorkran/js-game-tutorials/contents/tutorial-markdowns';
 const marked = require('marked');
+const cheerioFunctions = require('../cheerio-functions/cheerio-functions')
 
 
 
@@ -23,6 +24,7 @@ router.get('/:name', function(req, res, next) {
       .then(function (repos) {
         // console.log(repos);
         // console.log('User has %d repos', repos.length);
+        cheerioFunctions.parseMarkdown(repos);
         console.log(marked(repos));
         res.json(repos);
       })

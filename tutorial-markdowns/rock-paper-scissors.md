@@ -1,5 +1,13 @@
+<span class="title">
 # Rock-Paper-Scissors
+</span>
 
+<span class="tag">
+##Tags
+loops variables
+</span>
+
+<span class="content">
 ## Before You Start
 If you haven't already, I would recommend going HERE to make sure you are all set up with a text editor. The point of this website is to make some games with minimal setup, but you will still need a few things
 
@@ -17,3 +25,4 @@ function test(app){
   return app
 }
 ```
+</span>
