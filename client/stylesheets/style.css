@@ -1,0 +1,22 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+home-component{
+  height: 100%
+}
+
+
+md-sidenav{
+  height: 100%;
+  width: 16em;
+}
+
+.home-card{
+  margin-left: 0;
+  margin-right: 0;
+}
