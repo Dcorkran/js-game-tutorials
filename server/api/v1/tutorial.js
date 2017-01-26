@@ -4,6 +4,7 @@ var rp = require('request-promise');
 const GITHUB_URL = 'https://api.github.com/repos/Dcorkran/js-game-tutorials/contents/tutorial-markdowns';
 const marked = require('marked');
 const cheerioFunctions = require('../cheerio-functions/cheerio-functions')
+require('dotenv').config();
 
 
 
@@ -11,7 +12,7 @@ const cheerioFunctions = require('../cheerio-functions/cheerio-functions')
 router.get('/:name', function(req, res, next) {
 
   var options = {
-    uri: `${GITHUB_URL}/${req.params.name}.md?access_token=d1633859ed0991c62d43489b580f775554770cee`,
+    uri: `${GITHUB_URL}/${req.params.name}.md?${process.env.ACCESS_TOKEN}`,
     headers: {
       'Accept': 'application/vnd.github.VERSION.raw',
       'User-Agent': 'Request-Promise'
