@@ -11,7 +11,7 @@
     <md-content>
       <menu-link layout="column" layout-align="start">
         <a md-ink-ripple
-        ng-class="{'md-raised' : $ctrl.isSelected == 'Home'}"
+        ng-class="{'md-raised' : $ctrl.isSelected == undefined}"
         class="md-button side-nav-btn"
         ng-click="$ctrl.changeSelected('Home')"
         ui-sref='home'>
@@ -27,14 +27,14 @@
         <a md-ink-ripple
         ng-class="{'md-raised' : $ctrl.isSelected == 'Start Here'}"
         class="md-button side-nav-btn padding-side-nav"
-        ng-click="$ctrl.changeSelected('Start Here')"
+
         ui-sref='tutorial({name: "start-here"})'>
         Start Here
         </a>
         <a md-ink-ripple
-        ng-class="{'md-raised' : $ctrl.isSelected == 'Rock-Paper-Scissors'}"
+        ng-class="{'md-raised' : $ctrl.isSelected == 'rock-paper-scissors'}"
         class="md-button side-nav-btn padding-side-nav"
-        ng-click="$ctrl.changeSelected('Rock-Paper-Scissors')"
+
         ui-sref='tutorial({name: "rock-paper-scissors"})'>
         Rock-Paper-Scissors
         </a>
