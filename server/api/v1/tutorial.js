@@ -22,13 +22,14 @@ router.get('/:name', function(req, res, next) {
 
   rp(options)
       .then(function (repos) {
-        // console.log(repos);
-        // console.log('User has %d repos', repos.length);
-        cheerioFunctions.parseMarkdown(repos);
-        console.log(marked(repos));
-        res.json(repos);
+
+        let parsedObj = cheerioFunctions.parseMarkdown(repos);
+        parsedObj.content = marked(parsedObj.content);
+        console.log(parsedObj);
+        res.json(parsedObj);
       })
       .catch(function (err) {
+        console.log(err);
         res.json("boo");
           // API call failed...
       });

@@ -5,7 +5,8 @@ angular
 
     vm.$onInit = function(){
       console.log('hey');
-      //  vm.currentNavItem = 'page1';
+       vm.title = 'Welcome';
+       vm.summary = 'This is going to be the placeholder summary. Please read it because it is so intersting'
     }
 
   })

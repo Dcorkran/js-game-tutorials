@@ -1,3 +1,11 @@
-<md-nav-bar  md-selected-nav-item="$ctrl.currentNavItem" nav-bar-aria-label="navigation links">
-  <md-nav-item md-nav-click="goto('page1')" name="page1">Home</md-nav-item>
-</md-nav-bar>
+<!-- <md-nav-bar layout="column" md-selected-nav-item="$ctrl.currentNavItem" nav-bar-aria-label="navigation links">
+  <md-nav-item flex md-nav-click="goto('page1')" name="page1">{{$ctrl.title}}</md-nav-item>
+  <div flex>
+    <p>test</p>
+  </div>
+</md-nav-bar> -->
+
+<div class="nav">
+  <h1 class="nav-title nav-text-padding">{{$ctrl.title}}</h1>
+  <h2 class="nav-summary nav-text-padding">{{$ctrl.summary}}</h2>
+</div>

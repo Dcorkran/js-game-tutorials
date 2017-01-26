@@ -1,6 +1,6 @@
 <side-nav-component layout="column"></side-nav-component>
 <md-content flex layout="column">
-  <nav-component></nav-component>
-  <tutorial-main-component></tutorial-main-component>
+  <nav-component title="$ctrl.tutorial.title" tags="$ctrl.tutorial.tags" summary="$ctrl.tutorial.summary"></nav-component>
+  <tutorial-main-component tutorial="$ctrl.tutorialHTML"></tutorial-main-component>
   <about-component></about-component>
 </md-content>

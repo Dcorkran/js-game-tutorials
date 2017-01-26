@@ -2,9 +2,14 @@
 # Rock-Paper-Scissors
 </span>
 
-<span class="tag">
-##Tags
-loops variables
+<span class="summary">
+## Summary
+Practice variable declaration, debugging, and handling user input by making your own rock-paper-scissors game
+</span>
+
+<span class="tags">
+## Tags
+variables user-input 
 </span>
 
 <span class="content">
