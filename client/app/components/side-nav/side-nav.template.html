@@ -4,10 +4,42 @@
       md-is-locked-open="$mdMedia('gt-xs')"
       md-whiteframe="4">
 
-    <md-toolbar class="md-theme">
-      <h1 class="md-toolbar-tools">Sidenav Left</h1>
+    <md-toolbar class="md-theme" layout="column" layout-align="center center">
+      <img class="side-nav-img" src="https://www.easyprogramming.net/logo/js.png" alt="JS Logo">
+      <p class="side-nav-title">JS Game Tutorials</p>
     </md-toolbar>
-    <md-content layout-padding>
+    <md-content>
+      <menu-link layout="column" layout-align="start">
+        <a md-ink-ripple
+        ng-class="{'md-raised' : $ctrl.isSelected == 'Home'}"
+        class="md-button side-nav-btn"
+        ng-click="$ctrl.changeSelected('Home')"
+        ui-sref='home'>
+        Home
+        </a>
+        <a md-ink-ripple
+        class="md-button side-nav-btn"
+        ng-disabled="true"
+        ng-click="$ctrl.changeSelected('Home')"
+        ui-sref='home'>
+        Tutorials
+        </a>
+        <a md-ink-ripple
+        ng-class="{'md-raised' : $ctrl.isSelected == 'Start Here'}"
+        class="md-button side-nav-btn padding-side-nav"
+        ng-click="$ctrl.changeSelected('Start Here')"
+        ui-sref='tutorial({name: "start-here"})'>
+        Start Here
+        </a>
+        <a md-ink-ripple
+        ng-class="{'md-raised' : $ctrl.isSelected == 'Rock-Paper-Scissors'}"
+        class="md-button side-nav-btn padding-side-nav"
+        ng-click="$ctrl.changeSelected('Rock-Paper-Scissors')"
+        ui-sref='tutorial({name: "rock-paper-scissors"})'>
+        Rock-Paper-Scissors
+        </a>
+
+      </menu-link>
       <p>
         This sidenav is locked open on your device. To go back to the default behavior,
         narrow your display.

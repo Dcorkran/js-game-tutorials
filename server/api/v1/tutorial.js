@@ -11,7 +11,7 @@ const cheerioFunctions = require('../cheerio-functions/cheerio-functions')
 router.get('/:name', function(req, res, next) {
 
   var options = {
-    uri: `${GITHUB_URL}/${req.params.name}.md`,
+    uri: `${GITHUB_URL}/${req.params.name}.md?access_token=d1633859ed0991c62d43489b580f775554770cee`,
     headers: {
       'Accept': 'application/vnd.github.VERSION.raw',
       'User-Agent': 'Request-Promise'
@@ -22,6 +22,7 @@ router.get('/:name', function(req, res, next) {
 
   rp(options)
       .then(function (repos) {
+        console.log(repos);
 
         let parsedObj = cheerioFunctions.parseMarkdown(repos);
         parsedObj.content = marked(parsedObj.content);

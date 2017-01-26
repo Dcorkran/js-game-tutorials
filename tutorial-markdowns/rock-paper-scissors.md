@@ -1,15 +1,16 @@
-<span class="title">
+
 # Rock-Paper-Scissors
 </span>
 
-<span class="summary">
+
 ## Summary
+<span class="summary">
 Practice variable declaration, debugging, and handling user input by making your own rock-paper-scissors game
 </span>
 
 <span class="tags">
 ## Tags
-variables user-input 
+variables user-input
 </span>
 
 <span class="content">
@@ -24,7 +25,7 @@ Stuff goes here.
 
 ### Code Snippet
 
-```js
+```javascript
 function test(app){
   app = 2;
   return app

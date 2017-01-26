@@ -44,11 +44,13 @@ nav-component{
 .nav-title{
   color: #FFFFFF;
   font-weight: 500;
+  font-size: 6em;
 }
 
 .nav-summary{
   color: #E0F2F1;
   font-weight: 300;
+  font-size: 2em;
 }
 
 ui-view{
@@ -57,9 +59,87 @@ ui-view{
 
 .tut-summary-card{
   margin: .5em 1em .5em 1em;
+  cursor: pointer;
 }
 
 .tut-summary-img{
   /*width: 25%;*/
   height: 6em;
+}
+
+
+/* Overline Reveal */
+.hvr-overline-reveal {
+  /*display: inline-block;*/
+  /*vertical-align: middle;*/
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  /*box-shadow: 0 0 1px transparent;*/
+  position: relative;
+  overflow: hidden;
+}
+.hvr-overline-reveal:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: #80CBC4;
+  height: 4px;
+  -webkit-transform: translateY(-4px);
+  transform: translateY(-4px);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-overline-reveal:hover:before, .hvr-overline-reveal:focus:before, .hvr-overline-reveal:active:before {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.side-nav-img{
+  padding-top: 1em;
+  margin: auto;
+  max-width: 80%;
+  height: 8em;
+}
+
+.side-nav-title{
+  color: #FFFFFF;
+  font-weight: 500;
+}
+
+.side-nav-btn{
+  margin: 0;
+  padding: 0 1em 0 1em;
+  text-align: left;
+  border-radius: 0;
+}
+
+.active{
+  background: #4DB6AC;
+}
+
+.active:hover{
+  background-color: black;
+}
+
+.md-button:not([disabled]):hover {
+  background-color: rgba(20, 158, 158, 0.2);
+}
+
+.md-button.active:not([disabled]):hover {
+  background-color: #4DB6AC;
+}
+
+.md-raised{
+  background-color: #80CBC4!important;
+}
+
+.padding-side-nav{
+  padding-left: 2em;
 }
