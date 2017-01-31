@@ -10,7 +10,6 @@ const users = require('./routes/users')
 const tutorial = require('./api/v1/tutorial')
 
 const app = express()
-
 app.use(logger('dev'))
 app.use(bodyParser.json())
 app.use(cookieParser())
