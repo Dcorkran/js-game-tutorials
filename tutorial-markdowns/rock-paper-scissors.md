@@ -58,9 +58,14 @@ prompt('Give me an input')
 Knowing about prompt, we can know gather our user input. Let's go ahead and declare our first variable. userChoice would be an appropriate name.
 
 ```javascript
-var userChoice = prompt('Please choose rock, paper, or scissors.')
+var userChoice = prompt('Please choose rock, paper, or scissors.');
 ```
 
+You can use a console.log to ensure that this is working correctly (ADD GIF)
+
+## Computer Choice
+### Make it Random
+We could write our code so that the computer will always choose the same thing, but that would not be very interesting. Using another method, we can make the choice random each time the game is played. Math.random() will generate a number between 0 and 1. Try plugging it into the console a few times and see what it produces. 
 ### Code Snippet
 
 ```javascript
