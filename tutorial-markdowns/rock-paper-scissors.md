@@ -27,6 +27,8 @@ Go ahead and make a directory (folder). This is where you are going to be saving
 
 Open Google Chrome and create a new Script snippit. This is what we will be using to test our code.
 
+![](http://imgur.com/a/ciJaa)
+
 ## Whiteboarding
 
 ### What is Whiteboarding
@@ -51,7 +53,7 @@ Normally, a form would be used to gather user input on a website. However, as we
 The syntax for which is as follows.
 
 ```javascript
-prompt('Give me an input')
+prompt('Give me an input');
 ```
 
 ### Declaring the User Input Variable
@@ -125,15 +127,15 @@ We will need to combine the userChoice and computerChoice variables with the app
 
 ```javascript
 if (playerChoice === computerChoice) {
-  alert('You chose ' + playerChoice + ', and the computer chose ' + computerChoice + '. Tie Game.')
+  alert('You chose ' + playerChoice + ', and the computer chose ' + computerChoice + '. Tie Game.');
 } else if (playerChoice === 'paper' && computerChoice === 'rock') {
-  alert('You chose ' + playerChoice + ', and the computer chose ' + computerChoice + '. You Win.')
+  alert('You chose ' + playerChoice + ', and the computer chose ' + computerChoice + '. You Win.');
 } else if (playerChoice === 'rock' && computerChoice === 'scissors') {
-  alert('You chose ' + playerChoice + ', and the computer chose ' + computerChoice + '. You Win.')
+  alert('You chose ' + playerChoice + ', and the computer chose ' + computerChoice + '. You Win.');
 } else if (playerChoice === 'scissors' && computerChoice === 'paper') {
-  alert('You chose ' + playerChoice + ', and the computer chose ' + computerChoice + '. You Win.')
+  alert('You chose ' + playerChoice + ', and the computer chose ' + computerChoice + '. You Win.');
 } else {
-  alert('You chose ' + playerChoice + ', and the computer chose ' + computerChoice + '. You Lose.')
+  alert('You chose ' + playerChoice + ', and the computer chose ' + computerChoice + '. You Lose.');
 }
 ```
 
@@ -156,21 +158,21 @@ if (computerChoice < .333) {
 }
 
 if (playerChoice === computerChoice) {
-  alert('You chose ' + playerChoice + ', and the computer chose ' + computerChoice + '. Tie Game.')
+  alert('You chose ' + playerChoice + ', and the computer chose ' + computerChoice + '. Tie Game.');
 } else if (playerChoice === 'paper' && computerChoice === 'rock') {
-  alert('You chose ' + playerChoice + ', and the computer chose ' + computerChoice + '. You Win.')
+  alert('You chose ' + playerChoice + ', and the computer chose ' + computerChoice + '. You Win.');
 } else if (playerChoice === 'rock' && computerChoice === 'scissors') {
-  alert('You chose ' + playerChoice + ', and the computer chose ' + computerChoice + '. You Win.')
+  alert('You chose ' + playerChoice + ', and the computer chose ' + computerChoice + '. You Win.');
 } else if (playerChoice === 'scissors' && computerChoice === 'paper') {
-  alert('You chose ' + playerChoice + ', and the computer chose ' + computerChoice + '. You Win.')
+  alert('You chose ' + playerChoice + ', and the computer chose ' + computerChoice + '. You Win.');
 } else {
-  alert('You chose ' + playerChoice + ', and the computer chose ' + computerChoice + '. You Lose.')
+  alert('You chose ' + playerChoice + ', and the computer chose ' + computerChoice + '. You Lose.');
 }
 ```
 
 (GIF HERE)
 ### Extra Credit
-Congratulations! You just made a game in about 20 lines of code! However, it is by no means bullet proof. For example, what if the user types in ROCK, or Rock, instead of rock. As it stands, our code does not know what to do in this situation. If you would like to fix this issues, I recommend looking at this (LINK tolowercase) method. A more thorough way of handling this could be achieved by using a DO WHILE (LINK) loop, but it is more advanced.
+Congratulations! You just made a game in about 20 lines of code! However, it is by no means bulletproof. For example, what happens if the user types in ROCK, or Rock, instead of rock. As it stands, our code does not know what to do in this situation. If you would like to fix this issues, I recommend looking at this (LINK tolowercase) method. A more thorough way of handling this could be achieved by using a DO WHILE (LINK) loop, but it is more advanced.
 
 
 </span>
