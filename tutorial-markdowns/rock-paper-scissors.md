@@ -126,7 +126,7 @@ We know that rock beats scissors, paper beats rock, and scissors beats paper. We
 
 Notice that we do not need to handle the computer choices as well. We have handled the outcomes in which a user can win, and in which the game is a tie. Therefore, if there is any other result we know that the user has lost. We can use the alert method to display the results in an alert box. Give it a shot in the console!
 
-![alert gif](http://giphy.com/gifs/26gsd4FfVPKyYj0cM)
+![alert gif](https://media.giphy.com/media/26gsd4FfVPKyYj0cM/giphy.gif)
 
 
 We will need to combine the userChoice and computerChoice variables with the appropriate text in order to accurately represent a winner or loser.
@@ -177,6 +177,8 @@ if (playerChoice === computerChoice) {
 ```
 
 ![rps gif](https://media.giphy.com/media/l0Ex8EDKnuTBli2FG/giphy.gif)
+
+l0Ex8EDKnuTBli2FG
 
 ### Extra Credit
 Congratulations! You just made a game in about 20 lines of code! However, it is by no means bulletproof. For example, what happens if the user types in ROCK, or Rock, instead of rock. As it stands, our code does not know what to do in this situation. If you would like to fix this issues, I recommend looking at [this method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase). A more thorough way of handling this could be achieved by using a [Do While](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while) loop, but it is more advanced.
