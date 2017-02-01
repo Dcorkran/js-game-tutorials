@@ -27,7 +27,7 @@ Go ahead and make a directory (folder). This is where you are going to be saving
 
 Open Google Chrome and create a new Script snippit. This is what we will be using to test our code.
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/ciJaa"><a href="//imgur.com/ciJaa"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+![open snippet](http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif)https://media.giphy.com/media/1iW2iDiLX3oVYNu8/giphy.gif
 
 ## Whiteboarding
 
