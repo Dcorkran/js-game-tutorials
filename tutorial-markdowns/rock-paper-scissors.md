@@ -17,15 +17,15 @@ variables user-input conditional-statements
 
 <span class="content">
 ## Before You Start
-If you haven't already, I would recommend going HERE to make sure you are all set up with a text editor. The point of this website is to make some games with minimal setup, but you will still need a few things
+If you haven't already, I would recommend [going here](http://www.jsgametutorials.rocks/tutorial/start-here) to make sure you are all set up with a text editor. The point of this website is to make some games with minimal setup, but you will still need a few things
 
 ## Intro
 Ok, so we are going to make rock-paper-scissors using JavaScript! Making this game is a great exercise in declaring variables, working with conditional statements, debugging, and seeing how your JavaScript code will run. Feel free to give it a shot on your own before reading the tutorial. I will go over how to run your code using Chrome in the next section.
 
 ### Setup
-Go ahead and make a directory (folder). This is where you are going to be saving your JavaScript file. Open up your text editor, make a new file, and save it to the directory. Whatever you name the file, be sure to add .js to the end (ex. rock-paper-scissors.js). Adding the .js will allow your text editor to highlight the JavaScript syntax appropriately, provide you with snippits (add a link here), etc.
+Go ahead and make a directory (folder). This is where you are going to be saving your JavaScript file. Open up your text editor, make a new file, and save it to the directory. Whatever you name the file, be sure to add .js to the end (ex. rock-paper-scissors.js). Adding the .js will allow your text editor to highlight the JavaScript syntax appropriately.
 
-Open Google Chrome and create a new Script snippit. This is what we will be using to test our code.
+Open Google Chrome, open your developer tools, navigate to the sources tab, and create a new Script snippit. This is what we will be using to test our code.
 
 ![Open Snippet Gif](https://media.giphy.com/media/1iW2iDiLX3oVYNu8/giphy.gif)
 
@@ -63,7 +63,10 @@ Knowing about prompt, we can know gather our user input. Let's go ahead and decl
 var userChoice = prompt('Please choose rock, paper, or scissors.');
 ```
 
-You can use a console.log to ensure that this is working correctly (ADD GIF)
+You can use a console.log(userChoice) after this line to ensure that this is working correctly.
+
+![log user choice gif](https://media.giphy.com/media/l0ExgJkfkcmDUZKxi/giphy.gif)
+
 
 ## Computer Choice
 
@@ -121,7 +124,10 @@ We know that rock beats scissors, paper beats rock, and scissors beats paper. We
 * IF the userChoice is scissors and the computerChoice is paper, the user wins the game
 * IF the result is anything ELSE, the user loses the game
 
-Notice that we do not need to handle the computer choices as well. We have handled the outcomes in which a user can win, and in which the game is a tie. Therefore, if there is any other result we know that the user has lost. We can use the alert method to display the results in an alert box. Give it a shot in the console! (GIF HERE)
+Notice that we do not need to handle the computer choices as well. We have handled the outcomes in which a user can win, and in which the game is a tie. Therefore, if there is any other result we know that the user has lost. We can use the alert method to display the results in an alert box. Give it a shot in the console!
+
+![alert gif](http://giphy.com/gifs/26gsd4FfVPKyYj0cM)
+
 
 We will need to combine the userChoice and computerChoice variables with the appropriate text in order to accurately represent a winner or loser.
 
@@ -170,9 +176,10 @@ if (playerChoice === computerChoice) {
 }
 ```
 
-(GIF HERE)
+![rps gif](https://media.giphy.com/media/l0Ex8EDKnuTBli2FG/giphy.gif)
+
 ### Extra Credit
-Congratulations! You just made a game in about 20 lines of code! However, it is by no means bulletproof. For example, what happens if the user types in ROCK, or Rock, instead of rock. As it stands, our code does not know what to do in this situation. If you would like to fix this issues, I recommend looking at this (LINK tolowercase) method. A more thorough way of handling this could be achieved by using a DO WHILE (LINK) loop, but it is more advanced.
+Congratulations! You just made a game in about 20 lines of code! However, it is by no means bulletproof. For example, what happens if the user types in ROCK, or Rock, instead of rock. As it stands, our code does not know what to do in this situation. If you would like to fix this issues, I recommend looking at [this method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase). A more thorough way of handling this could be achieved by using a [Do While](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while) loop, but it is more advanced.
 
 
 </span>
