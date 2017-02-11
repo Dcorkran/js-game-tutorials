@@ -12,25 +12,30 @@ Let's go over Chrome Dev-Tools and how you will be running the code written in t
 
 <span class="tags">
 ## Tags
-dev-tools
+dev-tools, text-editor
 </span>
 
 <span class="content">
-## Why?
-JavaScript is an awesome language to learn for beginners. One of the main reasons for this is due to the fact that anyone can write and run JavaScript files with minimal setup. As long as you have a text editor and a web browser you are good to go!
+##Intro
 
-### Intro
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+### Why?
+JavaScript is an awesome language to learn for beginners. One of the main reasons for this is due to the fact that anyone can write and run JavaScript code with minimal setup. As long as you have a text editor and a web browser you are good to go!
 
-### Chrome Dev-Tools and You!
+### Choose a Text Editor
+You could potentially write all of the code for these tutorials straight into the DevTools, but getting used to a text editor will make your life a lot easier. One big advantage is the syntax highlighting. As long as your files end in .js you will notice that certain things become 
+
+### Chrome DevTools and You!
 Stuff goes here.
 
 ### Code Snippet
 
 ```javascript
 function test(app){
-  app = 2;
+  var app = 2;
   return app
+  if (true) {
+
+  }
 }
 ```
 </span>

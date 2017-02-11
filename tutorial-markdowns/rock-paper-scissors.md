@@ -20,7 +20,7 @@ variables user-input conditional-statements
 If you haven't already, I would recommend [going here](http://www.jsgametutorials.rocks/tutorial/start-here) to make sure you are all set up with a text editor. The point of this website is to make some games with minimal setup, but you will still need a few things
 
 ## Intro
-Ok, so we are going to make rock-paper-scissors using JavaScript! Making this game is a great exercise in declaring variables, working with conditional statements, debugging, and seeing how your JavaScript code will run. Feel free to give it a shot on your own before reading the tutorial. I will go over how to run your code using Chrome in the next section.
+Ok, so we are going to make rock-paper-scissors using JavaScript! Making this game is a great exercise in declaring variables, working with conditional statements, debugging, and seeing how your JavaScript code will run. Feel free to give it a shot on your own before reading the tutorial. I will go over how to run your code using Chrome in the next section. In the gifs shown, the code will be in the dev-tools snippit. However, I recommend writing your code in a text editor, and then copying and pasting it over to the snippit. 
 
 ### Setup
 Go ahead and make a directory (folder). This is where you are going to be saving your JavaScript file. Open up your text editor, make a new file, and save it to the directory. Whatever you name the file, be sure to add .js to the end (ex. rock-paper-scissors.js). Adding the .js will allow your text editor to highlight the JavaScript syntax appropriately.
