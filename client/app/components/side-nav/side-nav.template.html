@@ -27,16 +27,20 @@
         <a md-ink-ripple
         ng-class="{'md-raised' : $ctrl.isSelected == 'Start Here'}"
         class="md-button side-nav-btn padding-side-nav"
-
         ui-sref='tutorial({name: "start-here"})'>
         Start Here
         </a>
         <a md-ink-ripple
         ng-class="{'md-raised' : $ctrl.isSelected == 'rock-paper-scissors'}"
         class="md-button side-nav-btn padding-side-nav"
-
         ui-sref='tutorial({name: "rock-paper-scissors"})'>
         Rock-Paper-Scissors
+        </a>
+        <a md-ink-ripple
+        ng-class="{'md-raised' : $ctrl.isSelected == 'eight-ball'}"
+        class="md-button side-nav-btn padding-side-nav"
+        ui-sref='tutorial({name: "eight-ball"})'>
+        Magic Eight-Ball
         </a>
 
       </menu-link>
