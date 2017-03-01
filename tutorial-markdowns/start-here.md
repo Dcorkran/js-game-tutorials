@@ -19,10 +19,10 @@ dev-tools, text-editor
 ##Intro
 
 ### Why?
-JavaScript is an awesome language to learn for beginners. One of the main reasons for this is due to the fact that anyone can write and run JavaScript code with minimal setup. As long as you have a text editor and a web browser you are good to go!
+JavaScript is an awesome language to learn for beginners. One of the main reasons for this is due to the fact that anyone can write and run JavaScript code with minimal setup. As long as you have a text editor and a web browser (I will be using Google Chrome) you are good to go!
 
 ### Choose a Text Editor
-You could potentially write all of the code for these tutorials straight into the DevTools, but getting used to a text editor will make your life a lot easier. One big advantage is the syntax highlighting. As long as your files end in .js you will notice that certain things become 
+You could potentially write all of the code for these tutorials straight into the DevTools, but getting used to a text editor will make your life a lot easier. One big advantage is the syntax highlighting. As long as your files end in .js you will notice that certain things like variable declarations and strings change color. 
 
 ### Chrome DevTools and You!
 Stuff goes here.

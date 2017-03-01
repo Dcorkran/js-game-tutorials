@@ -128,18 +128,129 @@ The code for that could look something like this:
 ```javascript
 if (question === null) {
   break;
-} else {
-
 }
 ```
 
-You may not have seen break before. In this case, if we pass the condition where the question is equal to null, our code will run into this break condition, (break makes it so that you don't need the while condition...) 
-If you attempt to say the code out loud, it will make a lot of sense. 'If the question variable is equal to null,'
+You may not have seen break before. In this case, if we pass the condition where the question is equal to null, our code will run into this break. It will immediately break out of the do/while loop and begin running the code after the loop (in our case there is none). You can read more about break [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/break)
 
-Additionally, we will use that null value in our while loop, it will now look something like this:
+Our code should look like this:
 
-```java
+```javascript
+var name = prompt('Please enter your name.');
+var answers = ['It is certain.', 'Maybe next time.', 'Try again later.','Not a chance.','Answer unclear','My sources say no.'];
+do {
+  var question = prompt('Welcome ' + name + '. What is your question?');
+  if (question === null) {
+    break;
+  }
+} while (true)
+```
 
+We now have a way to break out of the loop! Let's update the looping condition to make more sense. We want the game to continue as long as the user does not press cancel, which would make our question variable equal to null. Similar to how we handled the if statement condition, we can change our while condition to the following.
 
+```javascript
+do {
+  var question = prompt('Welcome ' + name + '. What is your question?');
+  if (question === null) {
+    break;
+  }
+} while (question !== null)
+```
+
+This is telling us, 'DO the chunk of code that handles our game logic WHILE the question variable is not equal to null.' You might be thinking, "didn't we already handle the logic that will break out of the loop? Isn't the while condition redundant?" You are right, but we still need something for the loop to check to see if it should continue running. If you would like, you can change the condition to something like this:
+
+```javascript
+while (question !== 'done')
+```
+
+This would make it so that if the user typed the word done into the prompt, the loop would end.
+
+## Picking the Answer
+
+Going off of our IF, we can use ELSE to handle what would happen if the user asks a question.
+
+We need to take one answer from our array containing all of the available answers. We know that we can access data within an array by using an index. In this example, it would look something like this:
+
+```javascript
+var answer = answers[0];
+```
+That would set our answer variable to the value of the first item in our answer array. However, that would not be very fun for the user. Each time the game is played, they would only get the first answer. We should make it random.
+
+### Picking a Random Answer
+
+Try running the following code:
+
+```javascript
+Math.floor(Math.random() * 10);
+```
+
+![Random Index](https://media.giphy.com/media/l4FGqIFTtdn5cXxZK/giphy.gif)
+
+Let's break down what is happening. Math.floor is a method which takes a number and returns the nearest whole number rounded down. For example, if we ran the following code, we would see it returning 3:
+
+```javascript
+Math.floor(3.95)
+```
+
+Math.random is a method that returns a number between 0 and 1. If we take that number and multiply it by the length of our array, we can use it to generate a random index! However, we need to round that number down because the computer would not know how to interpret us trying to access an array at index 3.18923.
+
+So, our combined code that allows us to get a random index will look like the following:
+
+```javascript
+var answer = answers[Math.floor(Math.random() * answers.length)];
+```
+
+Combining the methods Math.floor, Math.random, and by accessing the length property of our answers array, our code is now fully dynamic! We could add or remove anything to our answer array and the game would still work as intended. This code should be inserted within an ELSE statement after our IF.
+
+### Display the answer
+
+We only need one more line of code! Let's take a step back and see what we have so far.
+
+```javascript
+var name = prompt('Please enter your name.');
+var answers = ['It is certain.', 'Maybe next time.', 'Try again later.','Not a chance.','Answer unclear','My sources say no.'];
+do {
+  var question = prompt('Welcome ' + name + '. What is your question?');
+  if (question === null) {
+    break;
+  } else {
+    var answer = answers[Math.floor(Math.random() * answers.length)];
+  }
+} while (question !== null);
+```
+
+Within our else, we are giving the computer an answer, but it is not being displayed yet. We can handle that with an alert. alert() is similar to a prompt, but requires no input from a user. We pass the string that we want the alert to display inside of the parenthesis.
+
+![Alert](https://media.giphy.com/media/26gR1EI4COWuEWjOE/giphy.gif)
+
+Using alert, and combining a few of our variables, we can now display the question and the answer! The code looks like this:
+
+```javascript
+alert('The question was: ' + question +'\n' + 'The magic 8-ball says: ' + answer);
+```
+
+Our question variable will be set to whatever the user entered into the prompt, and our answer variable is set to a random answer. MAKE SURE \n WORKS!!!! '\n'  allows us to display the string after it on a separate line.
+
+Here is our finished code!
+
+```javascript
+var name = prompt('Please enter your name.');
+var answers = ['It is certain.', 'Maybe next time.', 'Try again later.','Not a chance.','Answer unclear','My sources say no.'];
+do {
+  var question = prompt('Welcome ' + name + '. What is your question?');
+  if (question === null) {
+    break;
+  } else {
+    var answer = answers[Math.floor(Math.random() * answers.length)];
+    alert('The question was: ' + question +'\n' + 'The magic 8-ball says: ' + answer);
+  }
+} while (question !== null);
+```
+
+## Conclusion
+
+![eight-ball](https://media.giphy.com/media/xUA7aLRNGHuANX7ZQs/giphy.gif)
+
+You just made a thing! It might not change the world but it should have allowed you some practice with a few fundamental JavaScript concepts. Feel free to make it your own. You could add some different answers or make something happen given a certain user input!
 
 </span>
