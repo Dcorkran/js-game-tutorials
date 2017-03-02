@@ -1,11 +1,29 @@
 <div layout-padding>
-  <md-card class="home-card">
-    <h2>About</h2>
-    <md-card flex layout-padding>
+  <md-card class="about-card">
+    <h2 class="about-title">About</h2>
+    <!-- <md-card flex layout-padding>
       <p>test</p>
     </md-card>
     <md-card flex layout-padding>
       <p>test</p>
-    </md-card>
+    </md-card> -->
+    <p class="about">The goal of this site is to teach basic JavaScript concepts using simple games. It runs on an angular front end and uses express and
+      node.js for the server.</p>
+    <p class="about">All of the tutorials are pulled from markdown files hosted on Github. This makes creating a tutorial very easy. As long as the markdown is formatted correctly,
+      once a link is placed in the side-nav the server will pull and style the appropriate tutorial! If you would like to contribute, please feel free to submit a pull request. Take a look at some
+      of the markdown files for formatting examples.</p>
+
+    <div layout="row" layout-align="center center">
+      <div flex="50" layout="row" layout-align="center center">
+        <a href="https://github.com/Dcorkran/js-game-tutorials">
+          <img src="./images/github.png"></img>
+        </a>
+      </div>
+      <div flex="50" layout="row" layout-align="center center">
+        <a href="https://www.linkedin.com/in/dcorkran/">
+          <img src="./images/li.png"></img>
+        </a>
+      </div>
+    </div>
   </md-card>
 </div>

@@ -21,7 +21,14 @@ md-sidenav{
 }
 
 .home-card{
-  margin: 0 2em 0 2em;
+  margin: 0 4em 0 4em;
+}
+
+.about-title{
+  /*margin-bottom: 0;
+  margin-top: .5em;
+  padding-left: .6em;*/
+  margin: auto;
 }
 
 md-content{
@@ -66,6 +73,12 @@ ui-view{
 .tut-summary-img{
   /*width: 25%;*/
   height: 6em;
+  max-width: 7em!important;
+}
+
+.chrome-img{
+  height: 6em;
+  max-width: 7em!important;
 }
 
 
@@ -163,4 +176,23 @@ p{
 
 #tutorial-container{
   padding: 0 .5em 0 .5em;
+}
+
+.eight-ball{
+  /*height: 6em;*/
+  max-width: 6em!important;
+  margin-left: .5em;
+}
+
+.about{
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+.about-card{
+  margin: 0 8em 0 8em
+}
+
+.side-nav-gh{
+  margin-top: 2em;
 }
