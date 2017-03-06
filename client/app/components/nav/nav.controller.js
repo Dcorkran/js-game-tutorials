@@ -6,7 +6,7 @@ angular
     vm.$onInit = function(){
       console.log('hey');
        vm.title = 'Welcome';
-       vm.summary = 'This is going to be the placeholder summary. Please read it because it is so intersting'
+       vm.summary = 'Get your feet wet coding with JavaScript! The exercises on this site are designed to allow you to get started coding with minimal setup.'
     }
 
   })

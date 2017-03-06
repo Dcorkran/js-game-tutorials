@@ -69,6 +69,7 @@ ui-view{
   margin: .5em 1em .5em 1em;
   cursor: pointer;
   text-decoration: none!important;
+  background-color: #F5F5F5;
 }
 
 .tut-summary-img{
@@ -191,7 +192,8 @@ p{
 }
 
 .about-card{
-  margin: 0 8em 0 8em
+  margin: 0 8em 0 8em;
+  background-color: #EEEEEE;
 }
 
 .side-nav-gh{
@@ -200,4 +202,14 @@ p{
 
 .summary-text{
   text-decoration: none;
+}
+
+.tut-summary-container{
+  background-color: #EEEEEE;
+}
+
+.h2-no-padding{
+  margin: 0;
+  padding-left: .4em;
+  padding-top: .5em;
 }
