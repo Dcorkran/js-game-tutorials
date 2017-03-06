@@ -193,7 +193,8 @@ p{
 
 .about-card{
   margin: 0 8em 0 8em;
-  background-color: #F5F5F5;
+  padding: 1em 0 1em 0;
+  background-color: #FFFFFF;
 }
 
 .about-card-container{
