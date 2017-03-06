@@ -1,5 +1,8 @@
 # JS Game Tutorials
 
+# Deployed Site
+Working on getting a custom domain. Right now the deployed site lives at (http://jsgametutorials.rocks.s3-website-us-west-2.amazonaws.com/)
+
 ### Setup
 1. `fork` and `git clone` this repo.
 2. `cd` into the server directory and `npm install`
